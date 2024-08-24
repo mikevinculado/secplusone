@@ -1,0 +1,117 @@
+
+C1sc0123
+
+ncpa.cpl
+
+
+How to be a cybersec professional:
+1. di-kamote sa windows
+    expert sa windows
+2.
+ipconfig /all | findstr DNS  
+ipconfig /all | findstr Phy     -- mac address
+ipconfig /displaydns -- website has been surf
+
+ipconfig /displaydns | clip
+ipconfig /flushdns
+
+
+windows nslookup:
+ nslookup ccp.edu.ph 1.1.1.1
+ nslookup -type=mx ccp.edu.ph 
+ 
+ 
+find our most important servers:
+nslookup -type=txt admu.edu.ph
+
+nslookup -type=ptr admu.edu.ph
+
+
+task2: SOC Operations frmo scratch
+ edge
+   http://192.168.108.137/otrs/index.pl
+   root@localhost
+   C1sc0123
+   
+   http://192.168.108.137/otrs/customer.pl
+   user1
+   C1sc0123
+   
+   
+task3: Create SOC teams
+ SOC Analyst T1
+ SOC Manager
+ Incident Responders
+ 
+ 
+ 
+ SOC Tickets:
+ 1. Phishing attempts
+ 2. Malware Infections
+ 3. Unauthorize access
+ 4. DDoS Attacks
+ 
+ 
+ linux:
+ wazuh-user
+ wazuh 
+ 
+ web:
+  https://192.168.108.130
+  admin
+  admin
+  
+  
+  how to fix wazuh linux:
+  sudo systemctl start wazuh-manager
+  sudo systemctly start wazuh-dashboard
+  sudo systemctl start wazuh-indexer
+  
+  
+  cisco sw:
+   hostname SecswitchM
+   username admin privilege 15 secret pass
+   username mike privilege 15 secret pass
+   enable secret pass
+   no logging console
+   no ip domain-lookup
+   int vlan 1
+    ip add 10.21.1.4 255.255.255.0
+	
+	
+	
+	
+	
+	
+	CIA:  confidentiality: encryption
+	      Integrity:
+		  Availability:
+		  
+		  
+    Encrypt Cisco switch traffic:
+	  config t
+	    ip domain-name secplus.com
+		crypto key generate rsa
+		   -- choose 1024
+		ip ssh version 2
+		
+		
+		
+		
+task5: Securing network infra: CLoud vs on-Prem
+
+nmap -sP 202.125.102.0/24 | clip
+
+
+To check pc for Malware
+netstat -s -p tcp
+
+
+HomeLab:
+1. 16GB , 100GB ssd , bios enabled virtualization
+2. vmware workstation 17
+3. kaliVM 
+   SOC701vm 
+   Win2022server - 
+   install secureCRT.exe - Cracked
+   Visual studio code with Python 
